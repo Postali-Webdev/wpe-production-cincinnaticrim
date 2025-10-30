@@ -1,0 +1,43 @@
+{
+    "key": "group_63dd7cbf81100",
+    "title": "Attorney Bio Alert (Old Template)",
+    "fields": [
+        {
+            "key": "field_63dd7cbf9e7be",
+            "label": "Notice!",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<span style=\"color: #ff0000;\">This template is no longer being supported, please use the Attorney Bio (Updated) template. <\/span>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "attorney-bio.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1675459867
+}

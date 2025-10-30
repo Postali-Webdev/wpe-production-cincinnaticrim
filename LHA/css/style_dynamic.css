@@ -1,0 +1,12 @@
+/* Webkit */
+::selection {
+    background: #65ab96;
+}
+/* Gecko/Mozilla */
+::-moz-selection {
+    background: #65ab96;
+}
+
+span.highlight {
+	background-color: #65ab96;
+}

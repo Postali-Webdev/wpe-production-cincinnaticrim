@@ -1,0 +1,244 @@
+
+// keyframes for desktop sub-nav
+
+@keyframes fadein{
+    0% { opacity:0; top:60px; }
+    100% { opacity:1; top:70px; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; top:60px; }
+    100% { opacity:1; top:70px; }
+}
+
+
+header {    
+    #header-top {
+        &_right {
+            .mobile-nav {
+                display: none;
+            }
+            
+            &_menu {
+                display: block !important;
+
+                .text {
+                    display: none !important;
+                }
+                
+                #menu-main-menu {
+                    list-style-type: none;
+                    display: flex;
+                    padding-bottom:0 !important;
+                    align-items: center;
+
+                    li {
+                        display: flex;
+                        margin:0 10px 0 0;
+                        position: relative;
+                        height: auto;
+
+                        .accordion-toggle {
+                            display:none;
+                        }
+
+                        &:not(.menu-item-search) {
+                            &.disable {
+                                opacity: 0.5;
+                                pointer-events: none;
+                            }
+                        }
+
+                        // hover states to display sub-menu
+                        &:hover, 
+                        > a:focus ~, 
+                        > a:focus-visible ~ {
+                            a {
+                                &:before {
+                                    right: 20px;
+                                }
+                            }
+
+                            .sub-menu {
+                                display:block;
+                                z-index: 0;
+                                -webkit-animation: .3s ease 0s normal forwards 1 fadein;
+                                animation: .3s ease 0s normal forwards 1 fadein;
+
+                                li {
+                                    a {
+                                        background:none;
+                                        color:$white !important;
+
+                                        &:hover {
+                                            color: $teal !important;
+                                        }
+                                    }
+
+                                    // nested 3rd level flyout
+                                    .sub-menu {
+                                        display:none;
+                                        position: absolute;
+                                        top: 0 !important;
+                                        margin-left: 100%;
+
+                                        &:hover {
+                                            display:block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        // menu item has children
+                        &.menu-item-has-children::after {
+                            content: "\e907";
+                            font-family: icomoon;
+                            position: relative;
+                            font-size: 12px;
+                            margin-top: 22px;
+                            right: 2px;
+                            height: 30px;
+                            z-index: 1;
+                            color: $teal;
+                            display: block;
+                            rotate: 90deg;
+                            margin-right: 15px;
+
+                            @include respond(tab-land) {
+                                display:none;
+                            }
+                        }
+
+                        // active menu states for current page / current parent
+                        &.current-menu-parent,
+                        &.current-menu-item,
+                        &.current-page-ancestor {
+                            a {
+
+                                &::before {
+                                    right: 20px;
+                                    bottom: 40px;
+                                    display:block !important;
+                                }
+                            }
+
+                            &:hover {
+                                a {
+                                    color:$white;
+                                }
+
+                                .sub-menu {
+                                    left: -15px;
+
+                                    .current_page_item {
+                                        a {
+                                            color:$green !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.try {
+                            a {
+                                &::before {
+                                    display:none !important;
+                                }
+                                
+                                &::after {
+                                    background: #ffca2a;
+                                    position: absolute;
+                                    top: 44px;
+                                    height: 28px;
+                                    content: "";
+                                    display: block;
+                                    width: 87%;
+                                    z-index: -1;
+                                    left: 6px;
+                                    border-radius: 3px;
+                                }
+                            }
+
+                            &:hover {
+                                a {
+                                    color: $white !important;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+
+                        a {
+                            padding: 30px 5px;
+                            font-size: 13px;
+                            font-weight: 400;
+                            display: flex;
+                            align-items: center;
+                            z-index: 1;
+                            font-weight: normal;
+                            font-family: $sans;
+                            color: #fff;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            white-space: nowrap;
+                        }
+
+                        .sub-menu {
+                            width: auto;
+                            white-space: nowrap;
+                            transition: $trans;
+                            position: absolute;
+                            overflow: visible;
+                            background: $dkblue;
+                            z-index: 500;
+                            margin: 0;
+                            padding: 0;
+                            display: none;
+                            width: auto;
+                            top:25px;
+                            padding:10px;
+                            z-index: 1;
+                            left: -15px;
+
+                            .child-close {
+                                display:none;
+                            }
+
+                            li {
+                                margin-left: 0;
+                                
+                                &:hover {
+                                    transition: $trans;
+                                    
+                                    .sub-menu {
+                                        display:block;
+                                        margin-top: -10px;
+                                    }
+                                }
+
+                                a {
+                                    padding:10px 15px;
+                                    width:100%;
+
+                                    &::before {
+                                        display:none !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        @include nav-search-desktop;
+                    }
+                }
+
+                #mobile-sub-close {
+                    display:none;
+                }
+
+                #header-top_mobile {
+                    display:none;
+                }
+            }
+        }
+    }
+}

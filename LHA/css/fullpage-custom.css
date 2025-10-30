@@ -1,0 +1,335 @@
+body.modal-is-active .overlay {
+  opacity: 0.6;
+  pointer-events: auto;
+}
+
+body.modal-is-active .header_top_bar, body.modal-is-active .header_inner {
+  display: none !important;
+}
+
+.modal-buttons { 
+  margin: 40px 0 0;
+}
+
+.modal-buttons .column1 {
+  position: relative;
+}
+
+.modal-buttons .column2 .modal-btn {
+  float: right;
+}
+
+.modal-buttons .column1::after {
+  content: 'OR';
+  position: absolute;
+  right: -20px;
+  top: 138px;
+  color: #65ab96;
+  font-size: 1.3rem;
+}
+
+.modal-btn {
+  padding: 35px;
+  border-radius: 50%;
+  border:1px solid #65ab96;
+  display: block;
+  margin:0;
+  width:270px;
+  height:260px;
+  cursor: pointer;
+  transition: .15s linear;
+  text-align: center;
+}
+
+.modal-btn:hover {
+  background:#1b4679;
+}
+
+.modal-btn:hover span::before {
+  content: '\e908';
+}
+
+.modal-btn span {
+  position: relative;
+  display: block;
+  font-size: 1.4rem;
+  line-height: 30px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif!important;
+}
+
+.modal-btn span::before { 
+  display: block; 
+  font-size: 4.6rem;
+  line-height: 130%;
+  font-family: 'icomoon';
+  content: '\e909';
+  margin: 0px auto 15px auto;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 100%;
+  max-width: 80%;
+  opacity: 0;
+  pointer-events: none;
+  color: #fff;
+  z-index: 8000;
+  background-color: #0d213a;
+}
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-container {
+  position: relative;
+  width: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  display: block;
+  top: 40px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  line-height: 26px;
+  color: #1c4c85;
+  text-align: center;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+	z-index: 8010;
+}
+.modal-close hr {
+  width: 40px;
+  border: 2px solid #1c4c85;
+  margin: 13px auto;
+  padding: 0;
+  height:2px;
+  background-color:#1c4c85;
+  color:#ceaa78;
+  transition: 0.5s;
+}
+.modal-close:hover hr { 
+  background-color: #65ab96;
+  border: 2px solid #65ab96;
+}
+.modal-close hr:nth-child(1) {
+  transform: rotate(45deg) !important;
+  margin-top: 14px !important;
+}
+.modal-close hr:nth-child(2) {
+  transform: rotate(-45deg) !important;
+  margin-top: -17px !important;
+}
+.modal-menu {
+  display: block;
+  position: fixed;
+  margin:0;
+  padding:0;
+  margin-top:30px;
+  left:65px;
+  top:calc(50vh - 190px);
+  z-index: 8009;
+}
+.modal-menu li {
+  margin:0 !important;
+  line-height:24px !important;
+  color:none !important;
+}
+.modal-menu li:before {
+  content:none !important;
+}
+.modal-menu li.data-title {
+  display: block;
+  text-align:center;
+  position: relative;
+  left:-40px;
+  padding:10px 0;
+  color: #65ab96;
+  font-weight: 600;
+  text-transform:uppercase;
+}
+.modal-menu li.data-nav {
+	display:block;
+	margin: 10px 0 0 0 !important;
+	background: transparent;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  border:1px solid transparent;
+  transition: .15s linear;
+  text-decoration: none;
+  font-size:24px;
+}
+.modal-menu li.active {
+	border:1px solid #65ab96;
+}
+.modal-menu li.data-nav a {
+	display:block;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background-color: #1c4c85;
+  margin:0 auto;
+  position: relative;
+  transition: .15s linear;
+  border:5px solid #0d213a;
+  top:1px;
+  text-decoration: none;
+}
+.modal-menu li.data-nav:hover{
+	border:1px solid #65ab96;
+  cursor:pointer;
+}
+
+.section {
+  background-position:center right 100px;
+  background-repeat:no-repeat;
+  background-size:40%;
+  font-family:sans-serif;
+}
+.section h3 { 
+  color: #65ab96;
+}
+.section .smaller_text { 
+  margin-bottom: 30px!important;
+}
+.section-wrapper {
+  width:calc(50% - 150px);
+  margin-left:200px;
+}
+
+.overlay {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+
+#innocent-1 {
+  background-image:url('/wp-content/uploads/2018/09/homepage-criminal-process-not-guilty-pre-trial.png');
+  background-size:50%;
+}
+#innocent-2 {
+	 background-image:url('/wp-content/uploads/2018/09/homepage-criminal-process-not-guilty-plea-agreement.png');
+}
+#innocent-3 {
+	background-image:url('/wp-content/uploads/2018/09/homepage-criminal-process-guilty-sentencing.png');
+}
+#innocent-4 {
+	background-image:url('/wp-content/uploads/2018/09/homepage-criminal-process-not-guilty-verdict.png');
+  background-size:60%;
+}
+#innocent-5 {
+	background-image:url('/wp-content/uploads/2018/09/homepage-criminal-process-guilty-misdemeanor-and-felony-sentencing.png');
+  background-size:35%;
+}
+#innocent-6 .section-wrapper, #innocent-7 .section-wrapper {
+  width:100%;
+}
+#innocent-6 p, #guilty-5 p  {
+    width:500px;
+    margin:0 auto;
+    padding-top:10px;
+}
+#innocent-6 span, #guilty-5 span {
+  display: block;
+  text-align:center;
+  width:500px;
+  margin:0 auto;
+  padding-bottom:20px;
+}
+#innocent-7 p, #guilty-6 p {
+  width:500px;
+  margin:0 auto;
+  padding-top:30px;
+}
+#innocent-6 h3, #innocent-7 h3, #guilty-5 h3, #guilty-6 h3 {
+  text-align:center;
+}
+#innocent-7 .modal-close, #guilty-6 .modal-close {
+  position: relative;
+  height:auto;
+  top:30px;     
+  right:0;   
+  color:#65ab96;
+  text-align:center;
+  padding: 5px 50px; 
+  border: 1px solid #65ab96;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+#innocent-7 .modal-close:hover, #guilty-6 .modal-close:hover { 
+  filter: brightness(120%);
+}
+
+
+#guilty-1 {
+  background-image:url('/wp-content/uploads/2018/09/homepage-criminal-process-guilty-fines.png');
+}
+#guilty-2 {
+  background-image:url('/wp-content/uploads/2018/09/homepage-criminal-process-guilty-sentencing.png');
+}
+#guilty-3 {
+  background-image:url('/wp-content/uploads/2018/09/homepage-criminal-process-guilty-impact-to-your-record.png');
+  
+}
+#guilty-4 {
+  background-image:url('/wp-content/uploads/2018/09/homepage-criminal-process-guilty-misdemeanor-and-felony-sentencing.png');
+  background-size:35%;
+}
+
+.modal-table {
+  text-align:center !important;
+  border-spacing:0 !important;
+  width:500px !important;
+  margin:0 auto !important;
+}
+
+@media only screen and (max-width:1300px) {     
+  #innocent-5, #guilty-4 {
+    background-image:none !important;
+  }
+  #innocent-5 .section-wrapper, #guilty-4 .section-wrapper {
+    width:70%;
+  }
+
+}
+
+@media only screen and (max-width:1024px) {  
+  .modal-btn {
+  width: 260px;
+  height: 250px;
+  } 
+  .modal {
+    max-width:90%;
+  }
+  #innocent-1, #innocent-2, #innocent-3, #innocent-4, #innocent-5, #guilty-1, #guilty-2, #guilty-3, #guilty-4 {
+    background-image:none !important;
+  }
+  .section-wrapper {
+    width:60% !important;
+  }
+  .modal-table {
+    width:370px !important;
+  }
+  #guilty-5 p, #guilty-6 p, #innocent-6 span, #guilty-5 span, #innocent-7 p, #guilty-6 p {
+    width:370px;
+  }
+}
+

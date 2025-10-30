@@ -1,0 +1,18 @@
+/**
+ * Primary theme stylesheet
+ * EDIT INDIVIDUAL SCSS FILES
+ *
+ * @package %Allen%
+ * @author %Postali%
+**/
+
+@import 'mixins';
+@import 'reset';
+@import 'global';
+@import 'base';
+@import 'header';
+@import 'main_navigation_desktop';
+@import 'main_navigation_mobile';
+@import 'homepage_new';
+@import 'mobile';
+@import 'pages';

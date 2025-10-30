@@ -1,0 +1,104 @@
+
+/* homepage When To Hire panel */
+
+.homepage_when_to_hire h2,
+.homepage_when_to_hire h3 {
+    text-align: center;
+    color:white;
+    width:100%;
+}
+
+.homepage_when_to_hire h4 {
+    color:white;
+    width:100%;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.homepage_when_to_hire .columns ul {
+    width:100%;
+}
+
+.homepage_when_to_hire .columns ul li {
+    color:white;
+    font-family: "Montserrat",sans-serif;
+    line-height: 170%;
+    margin:0px 0px 0px 22px;
+}
+.homepage_when_to_hire .columns ul li:before {
+    color:white;
+}
+
+.homepage_when_to_hire .columns {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.homepage_when_to_hire .columns .column-66 {
+	width: 66%;
+	display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+}
+#homepage_when_to_hire_bottom .columns .column-66 {
+    text-align: left;
+}
+
+.homepage_when_to_hire .columns .misdemeanors_felonies {
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    align-items: normal;
+}
+
+.homepage_when_to_hire .columns .misdemeanors_felonies .column-50 {
+	display: flex;
+	width: 50%;
+    flex-wrap: wrap;
+}
+
+.homepage_when_to_hire .columns .misdemeanors_felonies .column-50#left {
+    background:url(/wp-content/uploads/2021/07/bg-misdemeanors.jpg);
+    background-size: cover;
+}
+
+.homepage_when_to_hire .columns .misdemeanors_felonies .column-50#left .column-content {
+    margin:50px 100px 50px 20%;
+}
+
+.homepage_when_to_hire .columns .misdemeanors_felonies .column-50#right {
+    background:url(/wp-content/uploads/2021/07/bg-felonies.jpg);
+    background-size: cover;
+}
+.homepage_when_to_hire .columns .misdemeanors_felonies .column-50#right .column-content {
+    margin:50px 20% 50px 100px;
+}
+
+.homepage_when_to_hire .columns .centered {
+	text-align: center;
+	justify-content: center;
+}
+
+#homepage_when_to_hire_middle {
+    padding: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .homepage_when_to_hire .columns .misdemeanors_felonies .column-50 {
+        width: 100%;
+    }
+    .homepage_when_to_hire .columns .column-66 {
+        width:100%;
+    }
+    #homepage_when_to_hire_middle {
+        background-position: left center;
+    }
+    .homepage_when_to_hire .columns .misdemeanors_felonies .column-50#left .column-content,
+    .homepage_when_to_hire .columns .misdemeanors_felonies .column-50#right .column-content {
+        margin:50px;
+    }
+}
