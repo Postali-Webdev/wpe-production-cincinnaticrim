@@ -66,7 +66,7 @@ else { $paged = 1; }
 						
   						<div class="page_not_found">
 
-  							     <img src="http://localhost/groene/wp-content/uploads/2018/09/404.png" alt="404 Page not found">  
+  							     <img src="/wp-content/uploads/2018/09/404.png" alt="404 Page not found">  
                        								                       								
                                 <div class="content_width_75">   
                                                     
@@ -74,26 +74,26 @@ else { $paged = 1; }
                            
                             <h3 class="green">Maybe these links are what you are looking for?</h3>
                             
-<ul class="two_column_list">
-<li><a href="/alcohol-offenses/" title="Alcohol Crimes">Alcohol Crimes</a></li>
-<li><a href="/arson-vandalism-criminal-damaging/" title="Arson and Property Damage">Arson and Property Damage</a></li>
-<li><a href="/assault/" title="Assault">Assault</a></li>
-<li><a href="/child-abuse-neglect/" title="Child Abuse">Child Abuse</a></li>
-<li><a href="/domestic-violence-assault/" title="Domestic Violence">Domestic Violence</a></li>
-<li><a href="/drug-offenses/" title="Drug Crimes">Drug Crimes</a></li>
-<li><a href="/drunk-driving-ovi-dui/" title="DUI">DUI / OVI</a></li>
-<li><a href="/juvenile-crimes/" title="Juvenile Crimes"">Juvenile Crimes</a></li>
-<li><a href="/kidnapping-abduction/" title="Kidnapping">Kidnapping & Abduction</a></li>
-<li><a href="/manslaughter-homicide/" title="Manslaughter">Manslaughter</a></li>
-<li><a href="/public-nuisance-offenses/" title="Public Nuisance">Public Nuisance</a></li>
-<li><a href="/robbery-burglary-trespassing/" title="Robbery">Robbery</a></li>
-<li><a href="/sex-offenses/" title="Sex Crimes">Sex Crimes</a></li>
-<li><a href="/theft-fraud-crimes/" title="Theft">Theft</a></li>
-<li><a href="/traffic-violations/" title="Traffic offenses">Traffic Offenses</a></li>
-<li><a href="/violent-crimes/" title="Violent crimes">Violent Crimes</a></li>
-<li><a href="/weapons-crimes/" title="Weapons crimes">Weapons Crimes</a></li>
-<li><a href="/white-collar-crimes/" title="White collar crimes">White Collar Crime</a></li>
-</ul>
+                            <ul class="two_column_list">
+                                <li><a href="/alcohol-offenses/" title="Alcohol Crimes">Alcohol Crimes</a></li>
+                                <li><a href="/arson-vandalism-criminal-damaging/" title="Arson and Property Damage">Arson and Property Damage</a></li>
+                                <li><a href="/assault/" title="Assault">Assault</a></li>
+                                <li><a href="/child-abuse-neglect/" title="Child Abuse">Child Abuse</a></li>
+                                <li><a href="/domestic-violence-assault/" title="Domestic Violence">Domestic Violence</a></li>
+                                <li><a href="/drug-offenses/" title="Drug Crimes">Drug Crimes</a></li>
+                                <li><a href="/drunk-driving-ovi-dui/" title="DUI">DUI / OVI</a></li>
+                                <li><a href="/juvenile-crimes/" title="Juvenile Crimes"">Juvenile Crimes</a></li>
+                                <li><a href="/kidnapping-abduction/" title="Kidnapping">Kidnapping & Abduction</a></li>
+                                <li><a href="/manslaughter-homicide/" title="Manslaughter">Manslaughter</a></li>
+                                <li><a href="/public-nuisance-offenses/" title="Public Nuisance">Public Nuisance</a></li>
+                                <li><a href="/robbery-burglary-trespassing/" title="Robbery">Robbery</a></li>
+                                <li><a href="/sex-offenses/" title="Sex Crimes">Sex Crimes</a></li>
+                                <li><a href="/theft-fraud-crimes/" title="Theft">Theft</a></li>
+                                <li><a href="/traffic-violations/" title="Traffic offenses">Traffic Offenses</a></li>
+                                <li><a href="/violent-crimes/" title="Violent crimes">Violent Crimes</a></li>
+                                <li><a href="/weapons-crimes/" title="Weapons crimes">Weapons Crimes</a></li>
+                                <li><a href="/white-collar-crimes/" title="White collar crimes">White Collar Crime</a></li>
+                            </ul>
                             
                             <p>If not, we suggest you head <a href="/" title="Head back to homepage">Back Home</a> and try again.</p>
                                	</div>
