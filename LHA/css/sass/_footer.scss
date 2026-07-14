@@ -150,6 +150,15 @@ footer {
 
         &.utility {
             padding: 15px 0;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 50px;
+
+            .column-50 {
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
+                width: fit-content;
+            }
 
             p {
                 font-size: 13px;
@@ -158,8 +167,8 @@ footer {
             }
 
             .utility-links {
-                justify-content: flex-end;
-                text-align: right;
+                justify-content: flex-start;
+                text-align: left;
                 flex-direction: row;
 
                 @include respond(tab-port) {
