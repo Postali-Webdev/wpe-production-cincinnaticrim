@@ -115,7 +115,11 @@ else { $paged = 1; }
 									
 							</div>
 
-							<div class="column2"><?php get_sidebar();?></div>
+							<div class="column2">
+                                <aside id="secondary" class="widget-area">
+                                    <?php get_template_part('block','sidebar-menus'); ?>
+                                </aside>
+                            </div>
 
 						</div>
 

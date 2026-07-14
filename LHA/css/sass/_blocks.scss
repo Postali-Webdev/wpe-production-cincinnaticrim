@@ -1,0 +1,23 @@
+
+
+.footer_contact {
+    background:$dkblue;
+    padding: 60px 0;
+
+    &::before {
+        display: none;
+    }
+
+    .container {
+        padding-bottom: 60px !important;
+        border-bottom: 1px solid rgba($white, .2);
+        
+        .columns {
+            align-items: flex-start;
+
+            h2 {
+                color: $white;
+            }
+        }
+    }
+}

@@ -19,7 +19,7 @@ global $qode_options_passage;
 						$sidebar = "Sidebar";
 					}
 				} else {
-					$sidebar = "SidebarPage";
+					$sidebar = "SidebarPage1";
 				}
 			}
 			

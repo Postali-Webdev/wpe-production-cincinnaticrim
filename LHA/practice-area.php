@@ -110,17 +110,23 @@ else { $paged = 1; }
 
 
 		<!-- BOTTOM TEXT PANEL -->
-		<div class="textpanel" id="practice_area_lower_content"><div class="container_inner">
-			<div class="two_columns_66_33 background_color_sidebar grid2 clearfix">
-				<div class="column1"><div class="column_inner">
-				<?php the_field('practice_area_lower_content'); ?>	
-			</div></div>
-			<div class="column2">
-				<div class="column_inner">
-				<?php get_sidebar(); ?>
-			</div></div>
+		<div class="textpanel" id="practice_area_lower_content">
+            <div class="container_inner">
+                <div class="two_columns_66_33 background_color_sidebar grid2 clearfix">
+                    <div class="column1">
+                        <div class="column_inner">
+                            <?php the_field('practice_area_lower_content'); ?>	
+                        </div>
+                    </div>
+                    <div class="column2">
+                        <div class="column_inner">
+                            <aside id="secondary" class="widget-area">
+                                <?php get_template_part('block','sidebar-menus'); ?>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
 			</div>
-
 		</div>
     </div>
 

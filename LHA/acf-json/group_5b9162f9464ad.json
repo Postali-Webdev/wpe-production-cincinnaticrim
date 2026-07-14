@@ -6,6 +6,7 @@
             "key": "field_639767db75e3d",
             "label": "Sub Title",
             "name": "sub_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_5b9163110f304",
             "label": "Lower Content",
             "name": "practice_area_lower_content",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -44,6 +46,7 @@
             "key": "field_63978d0b066ad",
             "label": "In-Page Navigation",
             "name": "in_page_navigation",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -65,6 +68,7 @@
                     "key": "field_63978d29066ae",
                     "label": "Title",
                     "name": "title",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -85,6 +89,7 @@
                     "key": "field_63978d67066af",
                     "label": "Anchor",
                     "name": "anchor",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "No spaces or special characters, use dashes between words. Example: anchor-link-example",
                     "required": 0,
@@ -109,14 +114,14 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "practice-area.php"
+                "value": "default"
             }
         ],
         [
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "practice-area-single-col.php"
+                "value": "practice-area.php"
             }
         ]
     ],
@@ -129,5 +134,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1670876569
+    "display_title": "",
+    "modified": 1779909231
 }

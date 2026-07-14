@@ -1,0 +1,230 @@
+/**
+ * Footer Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+@import url("/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css");
+
+footer {   
+    background:$dkblue;
+    padding-bottom: 0;
+    margin-bottom: 0 !important;
+
+    @include respond(tab-land) {
+        padding-bottom: 96px !important;
+    }
+
+    .menu {
+        margin: 0;
+        list-style-type: none;
+
+        li {
+            margin: 0 0 5px 0;
+            line-height: 1;
+
+            &::marker,
+            &::before {
+                display:none;
+            }
+
+            a {
+                color:$white !important;
+                text-decoration: none;
+                font-size: 14px;
+                margin: 12px 0 !important;
+                display: block;
+
+                &:hover {
+                    color:$orange !important;
+                }
+            }
+        }
+    }
+
+    p {
+        color:$white !important;
+        font-size: 16px;
+        display: block;
+        margin: 0 0 10px;
+        line-height: 1;
+
+        a {
+            &:hover {
+                color:$orange !important;
+            }
+        }
+    }
+
+    .footer-logo {
+        img {
+            max-width: 350px;
+            width: 85%;
+            height: auto;
+        }
+    }
+
+    .social-media {
+        display: flex;
+        gap: 10px;
+
+        span {
+            color: $white;
+            font-size: 30px;
+
+            &:hover {
+                color:$orange;
+            }
+        }
+    }
+
+    .columns {
+        &.top {
+            .column-50 {
+                width: 54%;
+
+                .phone > a,
+                .email > a {
+                    color:$white !important;
+                    text-decoration: none;
+
+                    &:hover {
+                        color:$orange !important;
+                    }
+                }
+
+                @include respond(tab-port) {
+                    margin-bottom: 40px;
+                    width: 100%;
+                }
+            }
+
+            .column-25 {
+                @include respond(tab-port) {
+                    width: 46%;
+                }
+
+                @include respond(phone-sm) {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        &.bottom {
+            p > a {
+                color:$white !important;
+                font-weight: normal;
+                text-decoration: none;
+
+                &:hover {
+                    color:$orange !important;
+                }
+            }
+
+            .column-50 {
+                width: 46%;
+
+                @include respond(tab-port) {
+                    width: 100%;
+
+                    &:first-of-type {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+
+        &.disclaimer {
+            padding: 15px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+            p {
+                font-size: 13px;
+                line-height: 160%;
+                margin-bottom: 0;
+            }
+        }
+
+        &.utility {
+            padding: 15px 0;
+
+            p {
+                font-size: 13px;
+                line-height: 160%;
+                margin-bottom: 0;
+            }
+
+            .utility-links {
+                justify-content: flex-end;
+                text-align: right;
+                flex-direction: row;
+
+                @include respond(tab-port) {
+                    justify-content: flex-start;
+                    margin-top: 15px;
+                }
+
+                ul {
+                    margin: 0;
+                    display: flex;
+                    gap: 15px;
+
+                    li {
+                        margin: 0;
+                        display: inline-flex;
+
+                        a {
+                            color:$white;
+                            text-decoration: none;
+                            font-size: 13px;
+
+                            &:hover {
+                                color:$orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .location {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+
+        .left {
+            width: 33%;
+
+            .eyebrow {
+                a {
+                    color:$white !important;
+
+                    &:hover {
+                        color:$orange !important;
+                    }
+                }
+            }
+
+            p {
+                line-height: 150%;
+                font-size: 14px;
+            }
+        }
+
+        .right {
+            width: 50%;
+
+            iframe {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+}

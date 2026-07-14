@@ -17,7 +17,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_66450a291e30b",
@@ -99,7 +100,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_664511c11cdd0",
@@ -392,7 +394,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_66463e8c16a00",
@@ -479,7 +482,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_664647f022aad",
@@ -582,7 +586,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_66464b73d2132",
@@ -690,7 +695,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_66465714b9cf9",
@@ -796,7 +802,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_66465cd3cd6a1",
@@ -903,7 +910,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_66474bea92261",
@@ -1005,7 +1013,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_66475afd78710",
@@ -1127,7 +1136,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_66476373a071d",
@@ -1230,7 +1240,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_66476f48d8806",
@@ -1258,7 +1269,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "homepage-2024.php"
+                "value": "default"
             }
         ]
     ],
@@ -1271,5 +1282,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1717167793
+    "display_title": "",
+    "modified": 1779909229
 }

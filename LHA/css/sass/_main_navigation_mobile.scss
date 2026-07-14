@@ -21,7 +21,7 @@
     }
    
     header {    
-        height:96px;
+        height:96px !important;
         
         #header-top {
             max-width: 100%;
@@ -106,7 +106,7 @@
                         left: 100%;
                         width: 100%;
                         box-sizing: border-box;
-                        height: calc(100vh - 96px);
+                        height: calc(100dvh - 96px);
                         overflow: visible;
                         position: fixed !important;
 
@@ -355,7 +355,7 @@
                                 box-sizing: border-box;
                                 transition:$trans;
                                 z-index: 100 !important;
-                                height: calc(100vh - 96px);
+                                height: calc(100dvh - 96px);
                                 display: block !important;
                                 overflow: scroll;
                                 background: #0b2b48;

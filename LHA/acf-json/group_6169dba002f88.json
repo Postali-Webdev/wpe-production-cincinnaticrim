@@ -6,6 +6,7 @@
             "key": "field_6169dba47b18a",
             "label": "Global Schema",
             "name": "global_schema",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -39,5 +40,7 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1634927398
+    "show_in_rest": false,
+    "display_title": "",
+    "modified": 1779909228
 }

@@ -13,7 +13,7 @@ $white: #fff;
 $teal: #65ab96;
 $dkblue: #0d213a;
 $ltblue: #19477A;
-$orange: #DEA343;
+$orange: #FFC361;
 
 $sans: 'Montserrat', sans-serif;
 $serif: 'Playfair Display', serif;
@@ -25,7 +25,7 @@ $icomoon: 'Icomoon';
         width:30px;
         justify-content: flex-end;
         margin-top: -6px;
-        padding-left: 110px;
+        padding-left: 0;
 
         .navbar-form-search {
             position: relative;
@@ -55,7 +55,7 @@ $icomoon: 'Icomoon';
                 color: $white;
                 height: 30px;
                 width: 30px;
-                background: $teal;
+                background: $orange;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -108,19 +108,6 @@ $icomoon: 'Icomoon';
                 position: relative;
                 top: 4px;
                 right: 0;
-
-                &::before {
-                    position: relative;
-                    content: "SEARCH THE SITE";
-                    text-decoration: underline;
-                    color: $teal;
-                    font-size: 14px;
-                    white-space: nowrap;
-                    margin-top: 0px;
-                    display: block;
-                    margin-left: -180px;
-                    font-family: $sans;
-                }
 
                 span {
                     color:$white;
@@ -447,5 +434,44 @@ $icomoon: 'Icomoon';
             margin-left: 10px;
             vertical-align: middle;
         }
+    }
+}
+
+@mixin cta-block {
+    .cta-block {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            color:$white;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &.form-link {
+                font-family: $sans;
+                color: $white;
+                font-size: 15px;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        
+
+        &.reversed {
+            a.form-link {
+                color:$blk;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
     }
 }

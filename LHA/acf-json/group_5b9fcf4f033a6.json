@@ -6,6 +6,7 @@
             "key": "field_5b9fcfaae7b98",
             "label": "Hero Panel",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -16,12 +17,14 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_5b9fcfc1e7b99",
             "label": "Instructions",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -39,6 +42,7 @@
             "key": "field_5b9fcfe1e7b9a",
             "label": "Content",
             "name": "homepage_hero_content",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -58,6 +62,7 @@
             "key": "field_5b9fd0b43c9f4",
             "label": "Intro Panel",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -68,12 +73,14 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_5b9fd0df3c9f5",
             "label": "Instructions",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -91,6 +98,7 @@
             "key": "field_5b9fd10f3c9f6",
             "label": "Content",
             "name": "homepage_intro_content",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -110,6 +118,7 @@
             "key": "field_5b9fd12c77ac7",
             "label": "Practice Areas Panel",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -120,12 +129,14 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_5b9fd13b77ac8",
             "label": "Instructions",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -143,6 +154,7 @@
             "key": "field_5b9fd15b77ac9",
             "label": "Content",
             "name": "homepage_practice_areas_content",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -162,6 +174,7 @@
             "key": "field_5b9fd1c2552dd",
             "label": "Attorney Profile panel",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -172,12 +185,14 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_5b9fd1d0552de",
             "label": "Instructions",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -195,6 +210,7 @@
             "key": "field_5b9fd1e6552df",
             "label": "Content",
             "name": "homepage_attorney_content",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -214,6 +230,7 @@
             "key": "field_5b9fd181b772a",
             "label": "Legal Process Panel",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -224,12 +241,14 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_5b9fd18cb772b",
             "label": "Instructions",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -247,6 +266,7 @@
             "key": "field_5b9fd1a3b772c",
             "label": "Content",
             "name": "homepage_legal_process_content",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -266,6 +286,7 @@
             "key": "field_5b9fd1fd3640c",
             "label": "Why Hire Us panel",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -276,12 +297,14 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_5b9fd20e3640d",
             "label": "Instructions",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -299,6 +322,7 @@
             "key": "field_5b9fd2253640e",
             "label": "Content",
             "name": "homepage_why_hire_content",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -334,5 +358,7 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1627408533
+    "show_in_rest": false,
+    "display_title": "",
+    "modified": 1779909228
 }

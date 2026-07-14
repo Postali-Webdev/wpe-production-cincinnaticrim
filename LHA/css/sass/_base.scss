@@ -107,7 +107,7 @@
     text-decoration: underline;
     }
     body a:hover { 
-    color: $green;
+    color: $orange;
     }
     .smaller_text { 
     font-size: 0.8rem;
@@ -124,11 +124,11 @@
     }
     .subheader_green { 
     @extend .subheader_white;
-    color: $green!important;  
+    color: $dkblue !important;  
     }
     .subheader_gold { 
     @extend .subheader_white;
-    color: $gold!important;  
+    color: $orange!important;  
     }
     .intro_text_white { 
     font-weight: $normal; 
@@ -140,7 +140,7 @@
         margin: 45px 0 22px 0;
     }
     a { 
-        color: $green!important;
+        color: #0D213A!important;
         word-wrap: break-word;
         
     }
@@ -148,6 +148,14 @@
     .intro_text_green { 
     @extend .intro_text_white;  
     color: $green!important; 
+
+        a {
+            color:$green !important;
+
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
     }
     .arrow_down { 
     margin-top: 80px;
@@ -215,13 +223,13 @@
     margin: 8px 0px 8px 4px;
     }
     .content ul li:before { 
-    font-size: 6px; 
-    font-family: $icomoon; 
+    font-size: 28px; 
     font-weight: normal; 
-    content: '\e917'; 
-    margin: 0 9px 0 -18px; 
-    color: $darkblue; 
+    content: "•"; 
+    margin: -3px 10px 0 -20px;
+    color: #0d213a;
     vertical-align: top;
+    position: absolute;
     }
     .content ul li ul, .content ol li ul { 
     list-style-position: outside; 
@@ -260,10 +268,10 @@
     /* buttons */
     .button_green { 
     display: inline-block; 
-    background: $lightgreen; 
-    color: $altdarkblue!important; 
+    background: $gold; 
+    color: $dkblue !important; 
     line-height: 100%; 
-    padding: 16px 60px; 
+    padding: 16px 40px; 
     font-weight: $bold; 
     font-size: 1rem; 
     margin-top: 20px; 
@@ -440,15 +448,16 @@
 
     /* header phone/search bar */
     .header_top_bar {
-        position: fixed;
+        position: absolute;
         top: 0;
-        background: #0d213a;
+        background: transparent;
         z-index: 51;
         width: 70%;
         right: 5%;
         display: flex;
         justify-content: flex-end;
     }
+
     .header_phone { 
     padding: 0 40px;
     p { 
@@ -537,7 +546,7 @@
     }
     }
     p#breadcrumbs { 
-    color: $green; 
+    color: $white; 
     text-transform: uppercase; 
     font-size: 0.75em;
     font-weight: $medium;
@@ -563,7 +572,7 @@
     left: 50%; 
     transform: translateX(-50%); 
     line-height: 100%; 
-    z-index: 1001; 
+    z-index: 40; 
     background-size: contain;
     }   
 
@@ -1194,9 +1203,7 @@
     height: -moz-fit-content;
     height: fit-content;
     }
-    aside .widget .menu li.menu-item-has-children a::after { 
-    left: 8px;
-    }
+
     aside .widget .sub-menu li a { 
     border-left: 5px solid $lightblue;
     }
@@ -1385,7 +1392,7 @@
         cursor: none;
         position: fixed;
         right: 0;
-        top: 115px;
+        top: 0;
         width: 400px;
         z-index: 99;
         @media screen and (max-width: 1024px) {
@@ -1400,7 +1407,7 @@
         }
         .nav-title {
         background: $medblue;
-        color: $green;
+        color: $white;
         padding: 10px 0px 10px 20px;
         font-size: 16px;
         font-weight: $bold;
@@ -1438,6 +1445,12 @@
         padding-bottom: 80px;
     }
 
+    .intro_text_green, 
+    .attorney_bio_quote,
+    .subheader_green {
+        color: #65ab96 !important;
+    }
+
     }
         
     /* DUI page */
@@ -1451,45 +1464,53 @@
     vertical-align: top;
     font-size: 1rem;
     }
-    .callout_box { 
-    background: $lightblue; 
-    padding: 25px 50px 10px 50px; 
-    border: 1px solid $green;
-    margin: 30px 0 35px;
-    text-align: center; 
-    box-shadow: 0px 0px 30px rgba(0,0,0,0.45);
-    p { 
-        color: $white!important; 
-        line-height: 150%; 
-        font-size: 1.25rem; 
-        margin: 0 0 16px 0;
+    .callout_box {
+        background: #1b4679;
+        padding: 30px 30px 90px;
+        margin: 0 0 30px 0;
+        text-align: center;
+        background: linear-gradient(0deg, rgba(13, 33, 58, 1) 0%, rgba(27, 70, 121, 1) 30%);
+
+        p { 
+            color: $white!important; 
+            line-height: 150%; 
+            font-size: 16px; 
+            margin: 0 0 16px 0;
+        }
+
+        .ibp { 
+            position: relative; 
+            display: block; 
+            font-size: 32px; 
+            line-height: 120%; 
+            font-weight: $medium; 
+            letter-spacing: 1px; 
+            color: $white !important;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &::before { 
+                font-family: $icomoon; 
+                content: '\e91d'; 
+                margin-right: 8px; 
+                line-height: 50px; 
+                font-size: 1rem;
+                vertical-align: middle; 
+                border-radius: 50%; 
+                padding: 10px; 
+                background: $orange; 
+                color: $blk;
+            } 
+        }
+
+        a { 
+            color: $orange!important; 
+        }
     }
-    .ibp { 
-        position: relative; 
-        display: block; 
-        font-size: 2.5rem; 
-        line-height: 120%; 
-        font-weight: $medium; 
-        letter-spacing: 1px; 
-        color: $white;
-        text-decoration: none;
-    }
-    .ibp::before { 
-        font-family: $icomoon; 
-        content: '\e91d'; 
-        margin-right: 8px; 
-        line-height: 50px; 
-        font-size: 1rem;
-        vertical-align: top; 
-        border-radius: 50%; 
-        padding: 10px; 
-        background: $green; 
-        color: $white;
-    } 
-    a { 
-        color: $green!important;
-    }  
-    }
+        
     .dui-penalties-section, .two-column-list {
     h4 a {
         color: $green;
@@ -1643,7 +1664,7 @@
         text-transform: uppercase; 
         font-size: 1.4rem; 
         margin: 15px 0 20px;
-        color: $green;
+        color: $dkblue;
     }
 
     .accordion_holder .accordion_item { 
@@ -1668,8 +1689,7 @@
         }
     }
     .accordion_holder.accordion h5:hover, .accordion_holder.accordion .ui-state-active { 
-        color: $green;
-        font-weight: $medium;
+        color: $white;
     }
     .accordion_holder.accordion h5 span.control-pm { 
         display: none
@@ -1677,8 +1697,8 @@
     .accordion_holder.accordion h5::before {
         content: "";
         background: $medblue;
-        width: 50px;
-        height: 100%;
+        width: 57px;
+        height: 57px;
         position: absolute;
         right: 0;
         top: 0;
@@ -1696,9 +1716,9 @@
         top: 0;
         transition: all .15s ease 0s;
         font-style: normal;
-        transform: rotate(90deg);
-        width: 50px;
-        height: 100%;
+        transform: rotate(0);
+        width: 57px;
+        height: 57px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1708,10 +1728,10 @@
         }
     }
     .accordion_holder.accordion h5:hover::before, .accordion_holder.accordion .ui-accordion-header-active::before { 
-        background: $green;
+        background: $dkblue;
     }
     .accordion_holder.accordion h5:hover::after, .accordion_holder.accordion .ui-accordion-header-active::after { 
-        transform: rotate(270deg);
+        transform: rotate(90deg);
     }
     .accordion_holder.accordion div.accordion_content { 
         padding: 12px 0px; 
@@ -1980,7 +2000,7 @@
     .blog_holder article h4 a, .blog_holder2 article h4 a { 
     font-size: 1.7rem; 
     font-weight: $light; 
-    color: $green; 
+    color: $dkblue; 
     text-decoration: none;
     }
 
@@ -2027,11 +2047,12 @@
     line-height: 100%; 
     font-size: 0.8em; 
     font-weight: $bold; 
-    background: $green;
+    background: $dkblue;
     }
     .read_more { 
     @extend .subheader_green;
     font-size: 0.9rem;
+    color:$dkblue !important;
     } 
 
     /* pagination */
@@ -2055,7 +2076,7 @@
     font-weight: $bold;
     }
     .pagination ul li span, .pagination ul li a:hover {
-    background: $green; 
+    background: $orange; 
     color: $white; 
     font-family:  $montserrat; 
     border: 0px!important; 
@@ -2071,7 +2092,7 @@
     background: $medblue;
     }
     .pagination ul li a.next:hover, .pagination ul li a.prev:hover { 
-    background: $green;
+    background: $orange;
     }
                         
     /* blog single */
@@ -2268,7 +2289,7 @@
     } 
     .blog_holder article .post_text_inner h4 { 
         font-size: 1.8rem;
-        color: $green;
+        color: $white;
         line-height: 110%;
     }
     .blog_holder article .post_text_inner a { 
@@ -2748,7 +2769,7 @@
     /* footer contact panel */
 
         .footer_contact { 
-            background:$ltblue;
+            background:$dkblue;
             position: relative; 
             padding: 80px 0; 
 
@@ -2905,10 +2926,10 @@
             text-transform: uppercase; 
             padding: 15px 30px !important;
             margin-bottom: 0px !important; 
-            background: $lightgray; 
+            background: rgba(255, 255, 255, .15);
             font-weight: $medium; 
-            color: $darkgray; 
-            border: 1px solid $white;  
+            color: $white; 
+            border: none;  
             @media screen and (max-width: 768px) {
             padding: 12px 22px 10px 22px !important;
             }
@@ -2917,22 +2938,17 @@
             height: 180px !important; 
         }
         input[type="submit"] {
-            position: relative !important; 
-            background: $orange !important; 
-            border: 0px !important; 
-            color: $altdarkblue!important; 
-            font-weight: $bold !important;
-            font-size: 1rem !important;
-            padding: 22px 30px !important;
-            line-height: 1 !important;
-            @media screen and (max-width: 641px) {
-            line-height: 1 !important;
-            }
+            border: 1px solid #fff;
+            color: #fff !important;
+            font-weight: bold;
+            font-family: "Montserrat", sans-serif;
+            background: transparent;
+            transition: .2s ease all;
+        
             &:hover {
-            -webkit-filter: brightness(110%);
-                    filter: brightness(110%);
+                background:rgba($white, .2)
+                }
             }
-        }
         }
 
 

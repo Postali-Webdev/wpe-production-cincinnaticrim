@@ -6,6 +6,7 @@
             "key": "field_6169dcc5687bc",
             "label": "JSON Schema",
             "name": "single_schema",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "Include any schema here that is only relevant to the content on this page",
             "required": 0,
@@ -53,5 +54,7 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1635169268
+    "show_in_rest": false,
+    "display_title": "",
+    "modified": 1779909228
 }

@@ -5,9 +5,157 @@
         align-items: center;
         width: 100%;
 
-        ul.search {
-            li {
-                @include nav-search-desktop;
+        ul.menu.search {
+            margin-top: -18px;
+        }
+
+        .search-holder {
+            width:30px;
+            justify-content: flex-end;
+            position: absolute;
+            right: 0;
+
+            .navbar-form-search {
+                position: relative;
+                z-index: 10;
+                background:none;
+        
+                .icon-search-icon:before, 
+                .icon-close-x:before {
+                    content: "";
+                    position: absolute;
+                    top: 9px;
+                    left: 0;
+                    transition: 0.3s linear;
+                    -webkit-transition: 0.3s linear;
+                    z-index: 10;
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: $normal;
+                    width: 20px;
+                    height: 20px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+        
+                .icon-search-icon:before {
+                    content:"\e90c";
+                    font-family: $icomoon;
+                    color:$white;
+                }
+        
+                .icon-close-x:before {
+                    content: "\e903";
+                    font-family: $icomoon;
+                    color: $blk;
+                    right: 7px;
+                    position: absolute;
+                    left: auto;
+                    top: 11px;
+                    transform:rotate(45deg)
+                }
+        
+                .form-control {
+                    width: 250px;
+                    padding: 6px;
+                    font-size: 16px;
+                    border: 0;
+                    height: 30px;
+                    font-family: $serif;
+                    background:$white;
+                }
+        
+                .btn {
+                    border: 0;
+                    background: transparent;
+                    font-size: 1.8rem;
+                    padding:0;
+                    cursor: pointer;
+                    &:active,
+                    &:hover,
+                    &:focus {
+                        color: #000;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    span {
+                        color:$blk;
+                        font-weight: bold;
+                    }
+                }
+        
+                .btn-search {
+                    height:40px;
+                    border-radius: 0 10px 10px 0;
+                    background:$orange !important;
+                    padding:8px;
+                    position: relative;
+                    top: 0;
+                    right: -5px;
+                    width: 40px;
+                    
+                    span {
+                        color:$white;
+                    }
+                }
+                
+                .search-form-container {
+                    text-align: right;
+                    position: absolute;
+                    width: 250px;
+                    overflow: hidden;
+                    background: $orange;
+                    right: 25px;
+                    top: 0;
+                    z-index: 9;
+                    transition: all .3s ease-in-out;
+                    border-radius: 10px 0 0 10px;
+        
+                    &.hdn {
+                        width: 0;
+                        
+                        & ~ .btn-search {
+                            height:39px;
+                            border-radius: 0 10px 10px 0;
+                            background: unset;
+                            padding:8px;
+                            background:none !important;
+        
+                            &:hover {
+                                background:none;
+
+                                .icon-magnifying-glass:before {
+                                    color: $white;
+                                }
+                            }
+        
+                            span {
+                                color:$white;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+        
+                    .search-input-group {
+                        width: 250px;
+                        display: flex;
+                        padding: 5px;
+                        height:40px;
+                        
+                        .btn {
+                            border: 0;
+                            background: $white;
+                            font-size: 1.6rem;
+                            padding: 4px 8px 0;
+                            border-radius: 5px 0 0 5px;
+                            height: 32px;
+
+                            span {
+                                color:$white;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -18,12 +166,14 @@
 }
 
 header {
-    position: fixed;
+    position: absolute;
     top:0;
     width: 100%;
     z-index: 50;
     display:flex;
     height:115px;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
     @include respond(tab-land) {
         top:auto !important;

@@ -71,7 +71,7 @@ header {
                                         color:$white !important;
 
                                         &:hover {
-                                            color: $teal !important;
+                                            color: $orange !important;
                                         }
                                     }
 
@@ -100,7 +100,7 @@ header {
                             right: 2px;
                             height: 30px;
                             z-index: 1;
-                            color: $teal;
+                            color: $orange;
                             display: block;
                             rotate: 90deg;
                             margin-right: 15px;
@@ -133,7 +133,7 @@ header {
 
                                     .current_page_item {
                                         a {
-                                            color:$green !important;
+                                            color:$orange !important;
                                         }
                                     }
                                 }

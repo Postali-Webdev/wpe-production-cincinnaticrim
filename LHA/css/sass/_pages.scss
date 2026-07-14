@@ -62,7 +62,12 @@
             color: $white;
         }
         a {
-            color: $green;
+            color: $white;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
         &#body {
             background: $darkblue;
@@ -111,8 +116,10 @@
             .subheader_gold {
                 display: block;
                 text-align: center;
+                color:$orange !important;
+                
                 &:before, &:after {
-                    background-color: $gold;
+                    background-color: $orange;
                     content: "";
                     display: inline-block;
                     height: 2px;
@@ -141,8 +148,14 @@
                             font-size: 15px !important;
                             line-height: 22px;
                             padding: 12px 28px 12px 0 !important;
+
+                            &:hover {
+                                color:$orange;
+                            }
+
                             &:after {
                                 top: calc(50% - 5.5px) !important;
+                                color:$white;
                             }
                         }
                     }
@@ -165,7 +178,7 @@
         cursor: none;
         position: fixed;
         right: 0;
-        top: 115px;
+        top: 0;
         width: 400px;
         z-index: 10;
         @media screen and (max-width: 1024px) {
@@ -180,7 +193,7 @@
         }
         .nav-title {
           background: $medblue;
-          color: $green;
+          color: $white;
           padding: 10px 0px 10px 20px;
           font-size: 16px;
           font-weight: $bold;
@@ -662,8 +675,10 @@ Updated Interior Page
             left: 0;
             height: 100%;
             width: 100%;
-            object-fit: cover;
-            object-position: top;
+            -o-object-fit: cover;
+               object-fit: cover;
+            -o-object-position: top;
+               object-position: top;
             @include respond(phone) {
                 position: relative;
                 margin-bottom: 30px;
@@ -745,7 +760,5 @@ Updated Interior Page
             }
         }
     }
-    footer {
-        border-top: solid 1px $white;
-    }
-  }
+
+}

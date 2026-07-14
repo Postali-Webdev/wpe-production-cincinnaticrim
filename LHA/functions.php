@@ -34,18 +34,19 @@ function my_custom_scripts() {
   	// Custom Scripts
   		wp_register_script('custom_scripts', get_stylesheet_directory_uri() . '/js/custom-scripts.js',array('jquery'), '1.01', true); 
   		wp_enqueue_script('custom_scripts');
-          wp_register_script('header_scripts', get_stylesheet_directory_uri() . '/js/header-scripts.js',array('jquery'), '1.01', true); 
+        wp_register_script('header_scripts', get_stylesheet_directory_uri() . '/js/header-scripts.js',array('jquery'), '1.01', true); 
   		wp_enqueue_script('header_scripts');
-  	  	// Read More Scripts
-  	/*if ( is_post_type_archive( $post_types = 'case_results' ) ) {
-		wp_register_script('readmore_scripts', get_stylesheet_directory_uri() . '/js/readmore.min.js',array('jquery'), null, true); 
-		wp_enqueue_script('readmore_scripts');
-		wp_register_script('readmore_settings', get_stylesheet_directory_uri() . '/js/readmore-settings.js',array('jquery'), null, true); 
-		wp_enqueue_script('readmore_settings');   
-	}*/
+  	
+    //slick slider
+		wp_register_script('slick-slider', get_stylesheet_directory_uri() . '/js/slick.min.js',array('jquery'), time(), true); 
+  		wp_enqueue_script('slick-slider');
+		wp_register_script('slick-custom', get_stylesheet_directory_uri() . '/js/slick-custom.js',array('jquery'), time(), true); 
+  		wp_enqueue_script('slick-custom');
+        wp_register_style('slick-styles', get_stylesheet_directory_uri() . '/css/generated/slick.css', null, null, 'all' );
+		wp_enqueue_style('slick-styles');
 	
 	// Add icomoon icons
-	wp_enqueue_style( 'icon-styles', 'https://i.icomoon.io/public/d175039853/PostaliIcons/style.css' ); // Enqueue styles for svg icons
+	wp_enqueue_style( 'icon-styles', 'https://cdn.icomoon.io/152819/PostaliIcons/style.css?8lck1o' ); // Enqueue styles for svg icons
 
 }
 
@@ -148,6 +149,8 @@ function LHA_register_nav_menus() {
     array(
         'primary-nav' => __( 'Primary Navigation', 'LHA' ),
         'mobile-nav' => __( 'Mobile Navigation', 'LHA' ),
+        'practice-areas-footer' => __( 'Practice Areas Footer', 'LHA' ),
+        'help-footer' => __( 'Help Footer', 'LHA' )
     )
   );
 }
@@ -369,6 +372,15 @@ if( function_exists('acf_add_options_page') ) {
 		'icon_url'      => 'dashicons-media-code',
 		'redirect'      => false
 	));
+
+    acf_add_options_page(array(
+        'page_title'    => 'Site Customizations',
+        'menu_title'    => 'Site Customizations',
+        'menu_slug'     => 'site_customizations',
+        'capability'    => 'edit_posts',
+        'icon_url'      => 'dashicons-edit-page',
+        'redirect'      => false
+    ));
 
 }
 
