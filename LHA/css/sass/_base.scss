@@ -1730,9 +1730,7 @@
     .accordion_holder.accordion h5:hover::before, .accordion_holder.accordion .ui-accordion-header-active::before { 
         background: $dkblue;
     }
-    .accordion_holder.accordion h5:hover::after, .accordion_holder.accordion .ui-accordion-header-active::after { 
-        transform: rotate(90deg);
-    }
+
     .accordion_holder.accordion div.accordion_content { 
         padding: 12px 0px; 
         background: none;
