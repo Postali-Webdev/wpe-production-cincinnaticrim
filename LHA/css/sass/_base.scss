@@ -305,16 +305,16 @@
     margin: 15px 0px 20px 0px;
     }
     table th { 
-    background: $darkblue;
-    -webkit-filter: brightness(120%);
-            filter: brightness(120%);  
-    padding: 12px 15px; 
-    font-size: 0.9rem; 
-    font-weight: $extrabold; 
-    color: $green; 
-    line-height: 120%; 
-    text-transform: uppercase; 
-    font-style: normal; 
+        background: $darkblue;
+        -webkit-filter: brightness(120%);
+                filter: brightness(120%);  
+        padding: 12px 15px; 
+        font-size: 0.9rem; 
+        font-weight: $extrabold; 
+        color: $gold; 
+        line-height: 120%; 
+        text-transform: uppercase; 
+        font-style: normal; 
     @media screen and (max-width: 480px) {
         font-size: 13px;
         padding: 5px 0;
