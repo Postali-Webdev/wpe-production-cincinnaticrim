@@ -173,18 +173,6 @@ if(get_post_meta(get_the_ID(), "qode_content-animation", true) != ""){
 												<div class="blog_single_text_holder">
 													<div class="text">
 														<?php the_content(); ?>
-
-                                                        <div class="about-block">
-                                                            <div class="img">
-                                                                <img src="/wp-content/uploads/2026/04/hp-brad-bio.png.webp" alt="Attorney Brad Groene">
-                                                            </div>
-                                                            <div class="copy">
-                                                                <p class="large">About the Author</p>
-                                                                <p class="eyebrow">Bradley J. Groene</p>
-                                                                <p>Attorney Bradley J. Groene's sole practice area focus is criminal defense. He has helped clients in the greater Cincinnati area since 2009, representing those charged with offenses ranging from minor misdemeanors to serious felonies. As a member of several national professional organizations, Brad is recognized for his knowledge and experience dealing with DUIs, Drug charges, and more.</p>
-                                                                <a href="/bradley-j-groene/" class="btn">Read Brad's Bio</a>
-                                                            </div>
-                                                        </div>
 													</div>
 
 													<?php wp_link_pages(); ?>
@@ -207,6 +195,19 @@ if(get_post_meta(get_the_ID(), "qode_content-animation", true) != ""){
 									<?php get_sidebar(); ?>
 								</div>
 							</div>
+
+                            <div class="about-block">
+                                <div class="img">
+                                    <img src="/wp-content/uploads/2026/04/hp-brad-bio.png.webp" alt="Attorney Brad Groene">
+                                </div>
+                                <div class="copy">
+                                    <p class="large">About the Author</p>
+                                    <p class="eyebrow">Bradley J. Groene</p>
+                                    <p>Attorney Bradley J. Groene's sole practice area focus is criminal defense. He has helped clients in the greater Cincinnati area since 2009, representing those charged with offenses ranging from minor misdemeanors to serious felonies. As a member of several national professional organizations, Brad is recognized for his knowledge and experience dealing with DUIs, Drug charges, and more.</p>
+                                    <a href="/bradley-j-groene/" class="btn">Read Brad's Bio</a>
+                                </div>
+                            </div>
+
 						<?php elseif($sidebar == "3" || $sidebar == "4"): ?>
 							<?php if($sidebar == "3") : ?>	
 								<div class="two_columns_33_66 background_color_sidebar grid2 clearfix">
