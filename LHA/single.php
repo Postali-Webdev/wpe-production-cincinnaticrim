@@ -156,7 +156,7 @@ if(get_post_meta(get_the_ID(), "qode_content-animation", true) != ""){
 					
 									<div class="column_inner">
 
-									<div class="blog_single_holder">	
+									    <div class="blog_single_holder">	
 											<article>
 											
 												<?php if(get_post_meta(get_the_ID(), "qode_hide-featured-image", true) != "yes") {
@@ -173,12 +173,16 @@ if(get_post_meta(get_the_ID(), "qode_content-animation", true) != ""){
 												<div class="blog_single_text_holder">
 													<div class="text">
 														<?php the_content(); ?>
+
+                                                        <p>ABOUT THE AUTHOR</p>
 													</div>
 
 													<?php wp_link_pages(); ?>
 												</div>
 											</article>
 										</div>
+
+                                        
 										
 										<?php
 											if($blog_hide_comments != "yes"){
@@ -228,6 +232,8 @@ if(get_post_meta(get_the_ID(), "qode_content-animation", true) != ""){
 													<div class="blog_single_text_holder">
 														<div class="text">
 															<?php the_content(); ?>
+
+                                                            
 														</div>
 														<div class="info">
 															<span class="left">
@@ -239,6 +245,9 @@ if(get_post_meta(get_the_ID(), "qode_content-animation", true) != ""){
 													</div>
 												</article>
 											</div>
+
+                                            
+
 											<?php
 												if($blog_hide_comments != "yes"){
 													comments_template('', true); 
